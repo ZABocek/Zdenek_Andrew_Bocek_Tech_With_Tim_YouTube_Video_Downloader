@@ -12,7 +12,7 @@ def download_video(url, save_path):
     except Exception as e:
         print(e)
         
-url = "https://www.youtube.com/watch?v=tC3u7UfTxsU"
+url = "https://www.youtube.com/watch?v=6stlCkUDG_s&list=PL4Gr5tOAPttLOY9IrWVjJlv4CtkYI5cI_"
 save_path = "C:/Users/zaboc/Desktop/Python_Automation"
 
 download_video(url, save_path)
