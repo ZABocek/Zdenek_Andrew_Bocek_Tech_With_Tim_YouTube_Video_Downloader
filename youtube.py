@@ -5,6 +5,8 @@ from tkinter import filedialog
 def download_video(url, save_path):
     try:
         yt = YouTube(url)
+        for stream in yt.streams:
+            print(stream)
         streams = yt.streams.filter(progressive=True, file_extension="mp4")
         highest_res_stream = streams.get_highest_resolution()
         highest_res_stream.download(output_path=save_path)
@@ -12,7 +14,7 @@ def download_video(url, save_path):
     except Exception as e:
         print(e)
         
-url = "https://www.youtube.com/watch?v=6stlCkUDG_s&list=PL4Gr5tOAPttLOY9IrWVjJlv4CtkYI5cI_"
+url = "https://www.youtube.com/watch?v=6stlCkUDG_s"
 save_path = "C:/Users/zaboc/Desktop/Python_Automation"
 
 download_video(url, save_path)
