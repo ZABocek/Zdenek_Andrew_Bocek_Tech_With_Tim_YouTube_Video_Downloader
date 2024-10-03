@@ -14,3 +14,5 @@ def download_video(url, save_path):
         
 url = "https://www.youtube.com/watch?v=tC3u7UfTxsU"
 save_path = "C:/Users/zaboc/Desktop/Python_Automation"
+
+download_video(url, save_path)
